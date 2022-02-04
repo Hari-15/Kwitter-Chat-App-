@@ -1,0 +1,9 @@
+body {
+    background : linear-gradient( yellow 0%, red 300%);
+    align-items: center;
+}
+
+#username {
+    width: 400px;
+}
+
