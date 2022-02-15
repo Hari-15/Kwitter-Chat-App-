@@ -1,9 +1,26 @@
 body {
-    background : linear-gradient( yellow 0%, red 300%);
-    align-items: center;
+    background-color : yellowgreen;
+    text-align: center;
+    background-position: center;
 }
 
 #username {
-    width: 400px;
+   width: 400px;
 }
+
+#logout {
+    float: right;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+
+
+
+
+
+
 
