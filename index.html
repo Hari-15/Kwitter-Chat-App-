@@ -1,27 +1,47 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- 
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- 
-        
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <title>Kwitter Chat App</title>
-        <link rel = 'stylesheet' type = 'text/css' href = 'style.css'>
-        <script src = 'main.js'>
-        </script>
-    </head>
-    <body>
-        <h1>Kwitter Chat App</h1>
-        <br>
-        <br>
-        <div >
-            <input  placeholder = 'Enter Username' id = 'username' type = 'text'>
-            <br>
-            <br>
-            <button onclick = 'Redirect()' class = 'btn btn-info'>Log In</button>
-        </div>
-    </body>
+<head>
+	<title>Kwiter</title>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+</head>
+<body>
+
+<center>
+	<h1 class="header">	
+		Kwitter	<sup>
+	<img src="https://doc-14-3k-docs.googleusercontent.com/docs/securesc/2j1qko2j6ha3q4npbqtq70onl2i9fica/7kiga9lbdnk96hm90gp5ft776645m3gc/1647595050000/01961524211666151724/16469124775006857861/1dYEnHY_nTlbA0zRrfMlcyCIIwfT1Q4Xb?ax=ACxEAsYIWXvRw8N5Uo8QqR9r8lb4xZnzIgjC8gmgd3FFukDN_g_pk_9Fi8hDCpl63AL3as9bMKgefZO9ArRPtBTkquASF4JnFBRKuzjaRC93G5BotUtuA3_W6JRCL-UMBwSW6n-gLA7YhvzDK7bWAKeuSxrqLyKWYXAO2kRyJSj3JmBw88GsHUbrC1pQx92-TeLBYyMvoqY_VUuSrtcxrMvnFlnQl1xb-XpSJzopn_YivKpY49KL9lE3qZ2JBEN_1_EJuz-zI_LqH_xU9-lNqw7GpswLWKXC0F6KR30wA8Kv3uLcb0C9MUL3EBnmBbII4ofOms7ezAPeiD5_dHaPlRngNtRPKFPNs37cWJqxKmL2wvobUJdCjrfpkRZbIVnqreGzPBRz7Ql1s2_C07a-JHJmZVyxR09gmNutrACAUK4zan2H3d4wZQGGrSg0JUYwA6DIKtxyGFcMQXVQR-x3W7o_tCLW_UguJbFDKXv0VCJBhZ2dp9GAtmnuShMhNxgMWtl_h_42mTS0-Z3Qk8k5RBZ2-UsUNQpfFEZH8gWRDkgT37ZqrvFMRL-ogFsHxwzPtGZe-TQVYbSzjaxEqUfzmzX8C3JJ_CHNNqutGlQP1hjWL9ppYBU8iSpXvavIfnfzKASikw4e4Vu3UfxD5Lp2ySvPihSmMPfiXVGNvEAohz70LY_CunqRlRc8NwaKsw1aNAyk4ORelXFylTA&authuser=0&nonce=s4b8l43pvpjj0&user=16469124775006857861&hash=uc4agdibvfaqiu0iou6f562nq4lg9h7r">
+	</sup>
+</h1>
+
+	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+
+	<img src="logo.png" class="logo">
+		<h3 >See what is happening in the world right now</h3>
+
+		<h4 >Join Kwitter today</h4>
+		
+		<div class="form-group">
+		  <label >User Name:</label>
+		 <input type="text" id="user_name" class="form-control" placeholder="User Name">
+		</div>
+
+		<button id="login_button" class="btn btn-primary" onclick="addUser()">Log in</button>
+		<br><br>
+	</div>
+</center>
+
+<script src="https://www.drv.tw/inc/wd.js?s=jynyhy9vu5r8xz5zy0utww"></script></body>
 </html>

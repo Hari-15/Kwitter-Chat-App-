@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Kwitter Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel = 'stylesheet' href = 'style.css'>
-    <script src = 'main.js'></script>
-    </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <body class = 'body-background'>
-        <button class = 'glyphicon glyphicon-log-out btn btn-danger' id = 'logout' onclick = 'Logout()'>Logout</button>
-        <br>
-        <br>
-        <br>
-        <h2 style = 'color:white;' id = 'name_2'>Welcome!</h2>
-        <br>
-        <br>
-        <br>
-        <h3>#Add Room: </h2>;
-        <br>
-        <input width = '400' placeholder = 'Room Name' id = 'room_name'>
-        <br>
-        <br>
-        <br>
-        <button class = 'btn btn-success' onclick = 'AddRoom()'>Add Room</button>
-    </body>
-    </body>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container">
+<button onclick="logout()" id="logout" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+	<center>
+		<h1 class="header">	
+			Kwitter	
+			<sup>
+				<img src="https://doc-14-3k-docs.googleusercontent.com/docs/securesc/2j1qko2j6ha3q4npbqtq70onl2i9fica/7kiga9lbdnk96hm90gp5ft776645m3gc/1647595050000/01961524211666151724/16469124775006857861/1dYEnHY_nTlbA0zRrfMlcyCIIwfT1Q4Xb?ax=ACxEAsYIWXvRw8N5Uo8QqR9r8lb4xZnzIgjC8gmgd3FFukDN_g_pk_9Fi8hDCpl63AL3as9bMKgefZO9ArRPtBTkquASF4JnFBRKuzjaRC93G5BotUtuA3_W6JRCL-UMBwSW6n-gLA7YhvzDK7bWAKeuSxrqLyKWYXAO2kRyJSj3JmBw88GsHUbrC1pQx92-TeLBYyMvoqY_VUuSrtcxrMvnFlnQl1xb-XpSJzopn_YivKpY49KL9lE3qZ2JBEN_1_EJuz-zI_LqH_xU9-lNqw7GpswLWKXC0F6KR30wA8Kv3uLcb0C9MUL3EBnmBbII4ofOms7ezAPeiD5_dHaPlRngNtRPKFPNs37cWJqxKmL2wvobUJdCjrfpkRZbIVnqreGzPBRz7Ql1s2_C07a-JHJmZVyxR09gmNutrACAUK4zan2H3d4wZQGGrSg0JUYwA6DIKtxyGFcMQXVQR-x3W7o_tCLW_UguJbFDKXv0VCJBhZ2dp9GAtmnuShMhNxgMWtl_h_42mTS0-Z3Qk8k5RBZ2-UsUNQpfFEZH8gWRDkgT37ZqrvFMRL-ogFsHxwzPtGZe-TQVYbSzjaxEqUfzmzX8C3JJ_CHNNqutGlQP1hjWL9ppYBU8iSpXvavIfnfzKASikw4e4Vu3UfxD5Lp2ySvPihSmMPfiXVGNvEAohz70LY_CunqRlRc8NwaKsw1aNAyk4ORelXFylTA&authuser=0&nonce=s4b8l43pvpjj0&user=16469124775006857861&hash=uc4agdibvfaqiu0iou6f562nq4lg9h7r">
+			</sup>
+		</h1>
+		<h3 id="user_name"class="color_white"></h3>
+		<div class="form-group input_div_room_page">
+			<label>#Add Room:</label>
+			<input type="text" class="form-control" id="add_room" placeholder="#Room name">
+		</div>
+		<button onclick="add_room()"class="btn btn-success">#Add Room</button>
+		<h3 class="color_white">#TRENDINGROOMS</h3>
+	<div id="output"></div>
+	</center>
+</div>
+<script src="kwitter_room.js"></script>
+</body>
 </html>
